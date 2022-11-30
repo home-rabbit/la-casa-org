@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+  <head>
+    
+    <title>Farm Of Fortune</title>
+    <meta charset="utf-8" Set-Cookie: widget_session=abc123; SameSite=None; Secure />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!--- Launch Timer 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Share+Tech+Mono'>
+    <link rel="stylesheet" href=""> --->
+
+    <!-- Favicons -->
+    <link href="ASSETS/IMG/IMG_3080.PNG" rel="icon" type="image/png">
+    <link href="ASSETS/IMG/IMG_3080.PNG" rel="apple-touch-icon">
+
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="@DjcraigTro" />
+    <meta property="twitter:url" content="https://twitter.com/DjcraigTro" />
+    <meta name="twitter:title" content="Farm Of Fortune" />
+    <meta name="twitter:description" content="The Latest dapp From Fortune Hunters" />
+    
+
+    <!-- Vendor CSS Files -->
+    <link href="ASSETS/vendor/bootstrap-css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="node_modules/boxicons/css/boxicons.css" rel="stylesheet">
+    <link href="ASSETS/vendor/glightbox/glightbox.min.css" rel="stylesheet">
+    <link href="node_modules/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="ASSETS/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="ASSETS/js/jquery.min.js"></script>
+    <script src="ASSETS/js/jquery.dropotron.min.js"></script>
+    <script src="ASSETS/js/browser.min.js"></script>
+    <script src="ASSETS/js/breakpoints.min.js"></script>
+    <script src="ASSETS/js/util.js"></script>
+    <script src="ASSETS/js/interface_20220701_0800.js"></script>
+    <script src="ASSETS/js/main.js"></script>
+    <script src="ASSETS/js/web3.min.js"></script>
+    <script src="ASSETS/js/main_eth_20220701_0800.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script type="text/javascript" src="https://widget.gleamjs.io/e.js" async="true"></script>
+    
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CPoppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+
+    <Scripts>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+  </head>
+
+  <style>
+    body {
+      background-image: url('ASSETS/IMG/farm-background-with-happy-animals-vector-21720727.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+
+  <body>
+     
+    <!-- Launch section for launch -->
+<!-- <div id="clock" style="z-index: 999;padding-top: 70px;">
+      <p class="date">{{ date }}</p>
+      <p class="time">{{ time }}</p>
+      <p class="text">DIGITAL CLOCK with Vue.js</p>
+    </div> -->
+   <!-- <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <a class="nav-link" href="https://home.cropsfarmer.online/" target="_blank"><img class="nav-logo" id="" alt="" src="assets/img/cropslogo.png">Farms</a>
+            </li>
+            <li>
+              <a class="nav-link" href="" target="_blank"><img class="nav-logo" id="" alt="" src="assets/img/ccs-audit.png">Audited by CyberCrimeShield™</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://bscscan.com/address/0x3b6c031Ee3576AEaDe2cCf7BB90070b29563BF3A" target="_blank"><img class="nav-logo" id="logo" alt="" src="assets/img/bscscan-logo-light-circle.svg">Contract</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://twitter.com/BUSDCropFarmer" target="_blank"><img class="nav-logo" id="twitter" alt="" src="assets/img/twitter.svg">Twitter</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://t.me/busdcropfarmer" target="_blank"><img class="contract-logo" id="telegram" alt="" src="assets/img/telegram.svg">Telegram</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row justify-content-center" style="
+    margin-top: 100px;">
+          <div class="col-xl-6 col-lg-8" style="background: #000000c4;border: 1px solid white!important;border-radius: 14px;/* margin-bottom: 50px; */box-shadow: 0 0 3px #eeb200, 0 0 3px #f3b702, 0 0 3px #f5b801, 0 0 200px #f5b800;">
+            <h1 style="padding-top: 390px;padding-bottom: 20px;color: white;"> The <strong class="avax"> BNB </strong>
+              Crops Yield Farmer </h1>
+            <h2 style="color: white;">Choose your ROI <strong class="avax"> 2%/2.5%/3%/3.5% STATIC</strong> APR Daily.
+            </h2>
+          </div>
+        </div> -->
+    <!-- End Launch section -->
+        
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <a class="nav-link" href="https://georgestamp.xyz/2022/10/farm-of-fortune/" target="_blank"><img class="nav-logo" id="Audit" alt=""
+                  src="ASSETS/IMG/IMG_3081.jpg">AUDIT</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://bscscan.com/address/0x4B5e6D0c2C6d0540C38Db5219BdceCc295E05E0F"
+                target="_blank"><img class="nav-logo" id="logo" alt=""
+                  src="ASSETS/IMG/bscscan-logo-light-circle&#32;(1).svg">Verified Contract</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://twitter.com/DjcraigTro" target="_blank"><img class="nav-logo"
+                  id="twitter" alt="" src="ASSETS/IMG/twitter.svg">Twitter</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://t.me/FortuneHunters_Eco_System" target="_blank"><img class="contract-logo"
+                  id="telegram" alt="" src="ASSETS/IMG/telegram&#32;(2).svg">Telegram</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header> <!-- End Header -->
+    
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8">
+             <h1> The <strong class="avax"> FARM </strong> Of Fortune </h1>
+            </div>
+        </div>    
+        <div class="row gy-4 justify-content-center">
+            <div class="col-xl-2 col-md-4 hero-row">
+            <div class="icon-box">
+              <div class="header">
+                <i class=""></i>
+                <span></span>
+              </div>
+              <strong id="" class="number"></strong>
+              <div>
+                <strong class="avax">WELCOME TO FARM OF FORTUNE PART OF THE FORTUNE HUNTERS ECO-SYSTEM</strong>
+              </div>
+            </div>
+          </div>
+          
+          <a href="https://shop.ledger.com/pages/ledger-nano-s-plus?r=b370c5455cb7"><img width=728 height=90 src="http://affiliate.ledger.com/image/728/90/Default"></a>
+          <a href="https://mischiefminer.io?ref=0x279abb339b8b4e13f597be2ee0eb05e8c70d41b7"><img width=728 height=90 src="ASSETS/mischief_AdobeExpress.gif"></a>
+          
+          <div class="col-xl-2 col-md-4 hero-row">
+            <div class="icon-box">
+              <div class="header">
+                <i class="bi-bank"></i>
+                <span>Balance</span>
+              </div>
+              <strong id="contract-balance" class="number">0</strong>
+              <div>
+                <strong class="avax">BNB</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4 hero-row">
+            <div class="icon-box">
+              <div class="header">
+                <i class="bi-wallet2"></i>
+                <span>User Balance</span>
+              </div>
+              <div>
+                <strong id="user-balance" class="number">0</strong>
+              </div>
+              <div>
+                <strong class="avax">BNB</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4 hero-row">
+            <div class="icon-box">
+              <div class="header">
+                <i class="bi-people"></i>
+                <span>Referrals</span>
+                (<span id="user-total-referrals">0</span>)
+              </div>
+              <div>
+                <strong id="user-referral-total-bonus" class="number">0.00</strong>
+              </div>
+              <div>
+                <strong class="avax">BNB</strong>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+       
+      <section id="services" class="d-flex services align-items-center justify-content-center">
+        <div class="container">
+          <div class="row gy-4 mt-1">
+            <div class="col-lg-3 col-md-5">
+              <div class="icon-box">
+                <div class="icon">
+                  <img src="ASSETS/IMG/Plan1&#32;(1).png" alt="" class="img-fluid">
+                </div>
+                <h5>min deposit: 0.1 <strong class="avax">BNB</strong></h5>
+                <h5>max deposit: 50 <strong class="avax">BNB</strong></h5>
+                <!-- <h5>active deposits: <span id="active-invest1">0</span> <strong class="avax">BNB</strong></h5>
+              <h5>available: <span id="available1">0</span> <strong class="avax">BNB</strong></h5> -->
+                <div class="webdesigntuts-workshop">
+                  <form action="index.html" method="">
+                    <input type="search" class="form-control" id="eth-to-spend1" name="spend" step="1" type="number"
+                      value="1">
+                  </form>
+                </div>
+                <div class="main">
+                  <div class="btn" onclick="investInPlan1()" role="button">
+                    <p>Invest</p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="icon-box">
+                <div class="icon">
+                  <img src="ASSETS/IMG/Plan2.png" alt="" class="img-fluid">
+                </div>
+                <h5>min deposit: 0.2 <strong class="avax">BNB</strong></h5>
+                <h5>max deposit: 45 <strong class="avax">BNB</strong></h5>
+                <!-- <h5>active deposits: <span id="active-invest2">0</span> <strong class="avax">BNB</strong></h5>
+              <h5>available: <span id="available2">0</span> <strong class="avax">BNB</strong></h5> -->
+                <div class="webdesigntuts-workshop">
+                  <form action="index.html" method="">
+                    <input type="search" class="form-control" id="eth-to-spend2" name="spend" step="1" type="number"
+                      value="1">
+                  </form>
+                </div>
+                <div class="main">
+                  <div class="btn" onclick="investInPlan2()" role="button">
+                    <p>Invest</p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="icon-box">
+                <div class="icon">
+                  <img src="ASSETS/IMG/Plan3.png" alt="" class="img-fluid">
+                </div>
+                <h5>min deposit: 0.2 <strong class="avax">BNB</strong></h5>
+                <h5>max deposit: 40 <strong class="avax">BNB</strong></h5>
+                <!-- <h5>active deposits: <span id="active-invest3">0</span> <strong class="avax">BNB</strong></h5>
+              <h5>available: <span id="available3">0</span> <strong class="avax">BNB</strong></h5> -->
+                <div class="webdesigntuts-workshop">
+                  <form action="index.html" method="">
+                    <input type="search" class="form-control" id="eth-to-spend3" name="spend" step="1" type="number"
+                      value="1">
+                  </form>
+                </div>
+                <div class="main">
+                  <div class="btn" onclick="investInPlan3()" role="button">
+                    <p>Invest</p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-3 col-md-5">
+              <div class="icon-box">
+                <div class="icon">
+                  <img src="assets/img/PLAN4.png" alt="" class="img-fluid">
+                </div>
+                <h5>min deposit: 0.4 <strong class="avax">BNB</strong></h5>
+                <h5>max deposit: 40 <strong class="avax">BNB</strong></h5>
+                <!-- <h5>active deposits: <span id="active-invest4">0</span> <strong class="avax">BNB</strong></h5>
+              <h5>available: <span id="available4">0</span> <strong class="avax">BNB</strong></h5> -->
+            <!-- <div class="webdesigntuts-workshop">
+                  <form action="" method="">
+                    <input type="search" class="form-control" id="eth-to-spend4" name="spend" step="10" type="number"
+                      value="1000">
+                  </form>
+                </div>
+                <div class="main">
+                  <div class="btn" onclick="investInPlan4()" role="button">
+                    <p>Invest</p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="btn" onclick="ReinvestInPlan4()" role="button">
+                  <p>Compound +5%</p>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p>Next Compound: <span id="user-checkpoint-4"> ?</span></p>
+              </div>
+            </div>
+          </div>
+        </div> --> 
+      </section> <!-- End Services Section -->
+
+      <!-- ======= Dashboard Section ======= -->
+      <section id="dashboard" class="services">
+        <div class="container">
+          <div class="section-title">
+            <div class="stats-container">
+
+              <div class="row gy-4 justify-content: space-evenly">
+                <div class="col-xl-2 col-md-4 hero-row">
+                  <div class="stats-icon-box">
+                    <i class="ri-bank-line ri-1x"></i>
+                    User Deposits
+                    <div id="user-deposits">0</div>
+                    <strong class="avax">BNB</strong>
+                  </div>
+                </div>
+
+                <div class="col-xl-2 col-md-4 hero-row">
+                  <div class="stats-icon-box">
+                    <i class="ri-wallet-2-line ri-1x"></i>
+                    User Withdrawn
+                    <div id="user-total-withdrawn">0</div>
+                    <strong class="avax">BNB</strong>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-md-4 hero-row">
+                  <div class="stats-icon-box">
+                    <i class="ri-wallet-2-line ri-1x"></i>
+                    <span> Available </span>
+                    <div id="user-available">0</div>
+                    <strong class="avax">BNB</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timer">
+                <i class="bi-hourglass-split"></i>
+                    Time Until Claim
+                <span id="user-withdraw-countdown">?</span>
+              </div>
+              <section id="withdraw">
+                <a href="index.html#" class="btn2" onclick="withdraw()" role="button">
+                  Withdraw Rewards
+                </a>
+              </section>
+              <div class="referral-link">
+                <strong>Earn 2% when someone uses your referral link: </strong><a id="reflink"></a><span
+                  onclick="copyRef()"><i class="ri-file-copy-line"></i><span id="copied"></span>
+                </span>
+              </div>
+              <div id="user-deposits" style="display:block;">
+
+                <tbody>
+                  <table id="table-deposits" class="table-deposits">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th style="width: 10%">Plan
+                        </th>
+                        <th style="width: 5%">Rate
+                        </th>
+                        <th style="width: 15%">Invested
+                        </th>
+                        <th style="width: 15%">Start
+                        </th>
+                        <th style="width: 15%">Finish
+                        </th>
+                        <th style="width: 15%">Remaining
+                        </th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td colspan="6">No Deposits to Display </td>
+                    </tr>
+                  </table>
+                </tbody>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!-- End Dashboard Section -->
+
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq section-faq">
+        <div class="container">
+          <div class="faq-list">
+            <div id="main-wrapper">
+              <div class="container">
+                <div class="row gtr-200">
+                  <div class="">
+                    <div class="content">
+                      <h2>Project Details</h2>
+                      <span>
+                        <p>
+                          <strong style="color: #07ffff">Farm Of Fortune by The Fortune Hunters
+                        </p></strong>
+                        <p>
+                          <strong style="color: #07eeff">A sustainable investment platform based on Binance
+                            network (BSC) blockchain smart-contract technology.</strong>
+                          &nbsp;<br><br>
+                        <div class="faqbox">
+                          <span style="color: #0efc49;margin-left: 50px;"></span>
+                          <i class="bi bi-arrow-right-circle-fill"><span>PLANS :</span></i>
+                          <p>≈ Plan 1: 2.00% 200 days 400% Return</p>
+                          <p>≈ Plan 2: 1.50% 150 days 225% Return</p>
+                          <p>≈ Plan 3: 1.50% 90 days 135% Return</p>
+                          <p>❗️Withdrawals are subject to 3% Sustainability tax which will stay in the contract.</p>
+                          <p>❗️When withdrawn and re-invested this will make a new plan but increase daily rewards</p>
+                          <p>❗️You Can Make As Many New Deposits Into Different Plans As You Like Upto 150 BNB Max Per Wallet</p>
+                          &nbsp;<br>
+
+                          <span style="color: #ffc107;margin-left: 50px;"></span>
+                          <i class="bi bi-arrow-right-circle-fill"><span>REQUIREMENTS :</span></i>
+                          <p>≈ Plan 1: min. 0.1 BNB, max. of 50 BNB</p>
+                          <p>≈ Plan 2: min. 0.2 BNB, max. of 45 BNB</p>
+                          <p>≈ Plan 3: min. 0.2 BNB, max. of 40 BNB</p>
+                          &nbsp;<br>
+
+                          <span style="color: #17fa2a;margin-left: 50px;"></span>
+                          <i class="bi bi-arrow-right-circle-fill"><span>REFERRAL SYSTEM :</span></i>
+                          <p>≈ 1 level referral bonus of 2%</p>
+                          &nbsp;<br>
+
+
+                          <span style="color: #ffc107;margin-left: 50px;"></span>
+                          <i class="bi bi-arrow-right-circle-fill"><span>ANTI-WHALE CONTROL FEATURES :</span></i>
+                          <p>≈ 168 hours cut off time </p>
+                          <p>≈ 120 hours withdraw cooldown</p>
+                          
+                          <p>≈ Max active deposit limit of 50 BNB Per Plan</p>
+                          
+                          &nbsp;<br>
+
+                          <span style="color: #ffc107;margin-left: 50px;"></span>
+                          <i class="bi bi-arrow-right-circle-fill"><span>CONTRACT FEATURES :</span></i>
+                          <p>≈ Plan rewards</p>
+                          <p>≈ Fees Used For rehypothecation</p>
+                          <p>≈ Project Statistics</p>
+                          
+                          <br>
+                          <p><strong style="color: red;">Note:</strong> Funds that are used to initially
+                            deposit(re-invested) cannot be withdrawn. Please use the application at your own risk. </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!-- End Frequently Asked Questions Section -->
+    </main> <!-- End #main -->
+
+    <!--div class="youtube">
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/LCLxUlQH9ow" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+         <iframe width="500" height="280" src="https://www.youtube.com/embed/zz-1kAr30Zk" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div> -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          <span> &copy; Copyright <strong class="avax">Fortune Hunter (fork of Crops Farmer Team)</strong> All Rights Reserved </span>
+        </div>
+      </div>
+      <a href="index.html#" class="back-to-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+    </footer> <!-- End Footer -->
+
+
+    
+
+
+  </body>
+
+</html>
